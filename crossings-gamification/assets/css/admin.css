@@ -1,0 +1,93 @@
+/**
+ * Admin Styles
+ *
+ * @package Crossings_Gamification
+ * @since 1.0.0
+ */
+
+.cr-gamification-dashboard {
+	max-width: 1200px;
+}
+
+.cr-dashboard-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.cr-stat-box {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.cr-stat-icon {
+	font-size: 40px;
+	color: #2271b1;
+}
+
+.cr-stat-content h3 {
+	margin: 0;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.cr-stat-content p {
+	margin: 5px 0 0;
+	color: #646970;
+}
+
+.cr-dashboard-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.cr-dashboard-col-6 {
+	min-width: 0;
+}
+
+.cr-dashboard-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.cr-dashboard-card h2 {
+	margin-top: 0;
+	font-size: 18px;
+	border-bottom: 1px solid #c3c4c7;
+	padding-bottom: 10px;
+}
+
+.cr-status-active {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.cr-status-inactive {
+	color: #d63638;
+}
+
+.cr-badge-active {
+	color: #00a32a;
+	font-weight: 600;
+}
+
+.cr-badge-inactive {
+	color: #646970;
+}
+
+@media (max-width: 782px) {
+	.cr-dashboard-row {
+		grid-template-columns: 1fr;
+	}
+}
