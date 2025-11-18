@@ -1,0 +1,129 @@
+/**
+ * Public Styles
+ *
+ * @package Crossings_Gamification
+ * @since 1.0.0
+ */
+
+.cr-profile-badges {
+	padding: 20px;
+}
+
+.cr-badges-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.cr-badge-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cr-badge-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cr-badge-image {
+	margin-bottom: 15px;
+}
+
+.cr-badge-image img {
+	max-width: 100px;
+	height: auto;
+}
+
+.cr-badge-placeholder {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 48px;
+}
+
+.cr-badge-info h4 {
+	margin: 10px 0;
+	font-size: 18px;
+	color: #333;
+}
+
+.cr-badge-info p {
+	color: #666;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.cr-badge-info small {
+	color: #999;
+	font-size: 12px;
+}
+
+.cr-set-featured-badge {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.cr-awards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 15px;
+	margin: 20px 0;
+}
+
+.cr-award-card {
+	background: #f9f9f9;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	padding: 15px;
+	text-align: center;
+}
+
+.cr-award-card img {
+	max-width: 80px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.cr-award-card h4 {
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+.cr-award-card p {
+	font-size: 13px;
+	color: #666;
+}
+
+.cr-featured-badge {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px;
+	background: #f0f0f0;
+	border-radius: 4px;
+}
+
+.cr-badge-name {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	.cr-badges-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	.cr-awards-grid {
+		grid-template-columns: 1fr;
+	}
+}
